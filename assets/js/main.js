@@ -28,7 +28,6 @@ M = {
 		document.addEventListener("touchmove", M.move)
 	},
 	move: function(e) {
-		alert("ok")
 		if (!e.clientX) {
 			// Touch screen
 			R.now.x = -w2 + e.touches[0].clientX;
