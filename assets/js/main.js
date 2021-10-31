@@ -28,13 +28,14 @@ M = {
 		document.addEventListener("touchmove", M.move)
 	},
 	move: function(e) {
+		alert("ok")
 		if (!e.clientX) {
 			// Touch screen
 			R.now.x = -w2 + e.touches[0].clientX;
-			R.now.y = h2 + -e.touches[0].clientY;
+			R.now.y = h2 + -e.touches[0].clientY
 		} else {
 			R.now.x = -w2 + e.clientX;
-			R.now.y = h2 + -e.clientY;
+			R.now.y = h2 + -e.clientY
 		}
 		R.x = ((R.now.x - R.on.x) / S) + R.old.x;
 		R.y = ((R.now.y - R.on.y) / S) + R.old.y;
